@@ -7,3 +7,6 @@
 
 //2019-06-03
 //require_once "Index/index20190603.php";
+
+//2019-06-15
+require_once "Index/indexLeetCode.php";
