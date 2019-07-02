@@ -11,11 +11,4 @@
 //2019-06-15
 //require_once "Index/indexLeetCode.php";
 
-require_once "Redis/RedisStudy.php";
-
-use Redis\RedisStudy;
-
-$redis_study = new RedisStudy();
-
-$redis_study->set('tt', 'hello world!');
-echo $redis_study->get('tt');
+require_once "Index/indexTheArtOfProgramming.php";
