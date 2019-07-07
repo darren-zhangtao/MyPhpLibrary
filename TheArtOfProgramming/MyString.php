@@ -128,7 +128,7 @@ class MyString
     }
 
     //字符串全排列
-
+    //https://segmentfault.com/a/1190000002710424
     public function swap(&$str, $pos1, $pos2)
     {
         if ($pos1 != $pos2) {
@@ -149,6 +149,23 @@ class MyString
                 $this->Permutation($str, $begin + 1, $end);
                 $this->swap($str, $j, $begin);
             }
+        }
+    }
+
+    //字符串全组合
+    //https://segmentfault.com/a/1190000002710424
+    public function Combination($str) {
+        $len = strlen($str);
+        $n = 1 << $len;
+        for ($i=1; $i<$n; $i++) {
+            $out = '';
+            for ($j=0; $j<$len; $j++) {
+                if ($i & (1<<$j)) {
+                    $out .= $str[$j];
+                }
+            }
+            echo $out;
+            echo "\n";
         }
     }
 
